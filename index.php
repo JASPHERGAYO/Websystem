@@ -10,8 +10,8 @@
   
 </head>
 <body>
-  testing testing
-  testing again
+  /* Navigation Bar */
+  kita mo to?
   <header>
     <div class="logo">
       <img src="images/logo.png" alt="School Logo" style="height: 40px;">
