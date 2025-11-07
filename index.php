@@ -12,6 +12,7 @@
 <body>
   /* Navigation Bar */
   kita mo to? try
+  ashydiuasyhidoujasd
   <header>
     <div class="logo">
       <img src="images/logo.png" alt="School Logo" style="height: 40px;">
