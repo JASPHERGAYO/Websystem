@@ -11,7 +11,7 @@
 </head>
 <body>
   /* Navigation Bar */
-  kita mo to?
+  kita mo to? try
   <header>
     <div class="logo">
       <img src="images/logo.png" alt="School Logo" style="height: 40px;">
