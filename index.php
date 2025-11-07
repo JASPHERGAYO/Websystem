@@ -10,6 +10,7 @@
   
 </head>
 <body>
+  /* Navigation Bar */
   
   <header>
     <div class="logo">
