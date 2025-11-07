@@ -1,0 +1,394 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+  body {
+     background: url('../images/kld.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: black;
+    }
+
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      background: white;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    header .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      height: 60px;
+      margin-right: 10px;
+    }
+
+    header nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: black;
+      font-weight: 600;
+      transition: color 0.3s, border-bottom 0.3s;
+    }
+
+    header nav a:hover {
+      color: #007bff;
+    }
+
+    header nav a.active {
+      color: #f5c400;             
+      border-bottom: 2px solid #f5c400; 
+    }
+
+    .logout-btn {
+      background-color: #dc3545;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-left: 20px;
+      transition: background 0.3s ease;
+    }
+
+    .logout-btn:hover {
+      background-color: #b02a37;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Main Content Sections */
+    section {
+      padding: 40px 20px;
+      text-align: center;
+      color: black;
+    }
+
+    .section-title {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      color: black;
+    }
+
+    .description2 {
+      max-width: 700px;
+      margin: 0 auto 30px auto;
+      font-size: 1.1em;
+      color: black;
+      background-color: #ffffff80;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 25px #1ed844ff;
+    }
+
+    /* Company Profile */
+    #company-profile {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    #company-profile img {
+      width: 160px;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    /* About Us Carousel - FIXED */
+    .carousel-container {
+      position: relative;
+      max-width: 700px;
+      margin: 40px auto;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      background: rgba(255, 255, 255, 0.95);
+      min-height: 400px; /* Ensure minimum height */
+    }
+
+    .carousel-slide {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: 100%;
+    }
+
+    .team-item {
+      min-width: 100%;
+      text-align: center;
+      padding: 30px 20px;
+      color: black;
+      box-sizing: border-box;
+    }
+
+    .team-item img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      object-fit: cover;
+      border: 3px solid #1b5e20;
+    }
+
+    .team-item h3 {
+      margin: 10px 0;
+      color: #1b5e20;
+    }
+
+    .team-item p {
+      margin: 5px 0;
+      line-height: 1.4;
+    }
+
+    .carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 100, 0, 0.8);
+      color: white;
+      border: none;
+      padding: 12px 16px;
+      cursor: pointer;
+      border-radius: 50%;
+      font-size: 18px;
+      z-index: 10;
+    }
+
+    .prev { left: 15px; }
+    .next { right: 15px; }
+
+    .carousel-btn:hover {
+      background-color: #388e3c;
+    }
+
+    .social-links1 {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .social-link {
+      color: #1b5e20;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 16px;
+      border: 2px solid #1b5e20;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+
+    .social-link:hover {
+      background-color: #1b5e20;
+      color: white;
+    }
+
+    
+    @media (max-width: 768px) {
+      header {
+        flex-wrap: wrap;
+        padding: 10px 20px;
+      }
+
+      .menu-toggle {
+        display: block;
+        margin-left: auto;
+      }
+
+      header nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: white;
+        margin-top: 10px;
+        padding: 10px 0;
+        border-top: 1px solid #ddd;
+      }
+
+      header nav.show {
+        display: flex;
+      }
+
+      header nav a {
+        margin: 10px 20px;
+        font-size: 1rem;
+      }
+
+      .carousel-container {
+        margin: 20px;
+        min-height: 350px;
+      }
+
+      .team-item img {
+        width: 120px;
+        height: 120px;
+      }
+
+      .carousel-btn {
+        padding: 10px 14px;
+        font-size: 16px;
+      }
+    }
+.feature-icon-small {
+  width: 3rem;
+  height: 3rem;
+}
+
+.b-example-divider {
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(0,0,0,0.1);
+  border: solid rgba(0,0,0,0.15);
+  border-width: 1px 0;
+  box-shadow:
+    inset 0 0.5em 1.5em rgba(0,0,0,0.1),
+    inset 0 0.125em 0.5em rgba(0,0,0,0.15);
+}
+
+.bi {
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+.feature-section {
+  position: relative;
+  padding: 60px 0 20px 0; /* Reduce bottom padding */
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  margin-bottom: 0;
+}
+.feature-content {
+  position: relative;
+  z-index: 2;
+}
+
+.feature-section h2,
+.feature-section h4,
+.feature-section p {
+  color: #2c3e50 !important;
+}
+
+.feature-icon-small {
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-icon-small i {
+  font-size: 1.5rem;
+  color: #2c3e50;
+}
+
+/* Frosted Glass Effect for Right Side Blocks */
+.row .col.d-flex {
+  background: rgba(255, 255, 255, 0.35);
+  padding: 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.row .col.d-flex:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styling */
+.feature-section .btn-primary {
+  background: #2c3e50;
+  border: none;
+  padding: 12px 30px;
+  font-weight: bold;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.feature-section .btn-primary:hover {
+  background: #1a242f;
+}
+#howItWorks {
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+#howItWorks h2 {
+  font-size: 2rem;
+  color: #2d3748;
+  margin-bottom: 10px;
+}
+
+#howItWorks p {
+  color: #4a5568;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+#howItWorks .steps {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#howItWorks .step-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 230px;
+  padding: 25px 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+#howItWorks .step-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+#howItWorks .step-number {
+  font-size: 22px;
+  font-weight: bold;
+  border: 2px solid #2d3748;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+  background: #f7fafc;
+  color: #2d3748;
+}
+
+#howItWorks .step-card h3 {
+  margin: 10px 0 5px;
+  font-size: 1.1rem;
+  color: #2d3748;
+}
+
+#howItWorks .step-card p {
+  font-size: 0.9rem;
+  color: #4a5568;
+  margin: 0;
+}
